@@ -11,7 +11,7 @@ function App() {
       <Router>
         <Routes>
           <Route
-            element={userInfo ? <MainPages /> : <Login />}
+            element={userInfo ? <MainPages /> : <Login />} // Add private router
             path="/*"
           ></Route>
           <Route element={<Notfound />} path="*"></Route>
