@@ -11,7 +11,7 @@ export default function PostsPage() {
   const { loading, posts } = postList;
 
   useEffect(() => {
-    dispatch(listPosts());
+    dispatch(listPosts()); // add a check for the presence of posts, if so, do not send the request again
   }, [dispatch]);
   return (
     <Layout className="conatainerFuild">
